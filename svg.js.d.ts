@@ -415,7 +415,7 @@ declare namespace svgjs {
     export interface Image extends Shape {
         new (): Image;
         load(url?: string): this;
-        loaded(cb: (info: { width: number, height: number, ratio: number, url: string }) => void): this;
+        loaded(cb: (info: { width: number, height: number, ratio: number, url: string, img: HTMLImageElement }) => void): this;
         error(cb: (event: Event) => void): this;
     }
     interface Container {
