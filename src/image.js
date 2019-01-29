@@ -12,7 +12,8 @@ SVG.Image = SVG.invent({
       if (!url) return this
 
       var self = this
-        , img = new window.Image()
+        , img = new window.Image();
+      img.crossOrigin = 'Anonymous';
 
       // preload image
       SVG.on(img, 'load', function () {
